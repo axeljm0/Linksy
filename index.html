@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="css/styles.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+<title>Linksy - MySpace Inspired Social App</title>
+<style>
+</style>
+</head>
+<body>
+<div id="app" role="main" aria-label="Interfaz principal de Linksy">
+  <header tabindex="0">
+   <span> <img src="Assets/Linksy.png" width="60px" style=" float: left; margin-left:-20px; cursor: pointer;"></span>
+   <p style="margin-top:10px; margin-left: 15px; cursor: pointer;">Linksy</p> 
+  </header>
+  <main>
+    <nav class="sidebar" aria-label="Navegación principal">
+      <button id="btn-home" aria-label="Inicio" title="Inicio" class="active"><span>🏚️</span> </button>
+      <button id="btn-profile" aria-label="Perfil de usuario" title="Perfil" class="active"><span>👤</span></button>
+      <button id="btn-friends" aria-label="Amigos" title="Amigos"><span>👥</span></button>
+      <button id="btn-messages" aria-label="Mensajes" title="Mensajes"><span>✉️</span></button>
+      <button id="btn-settings" aria-label="Configuración" title="Configuración"><span>⚙️</span></button>
+    </nav>
+    <!-- Content sections -->
+     <section id="home" class="content-area active" tabindex="0" aria-label="Sección de inicio" style="background-color: black; color: white;">
+        <section class="welcome" aria-label="Bienvenida a Linksy" style="text-align: center; margin-top: 5%; ">
+            <h1>¡Bienvenido a Linksy!</h1>
+            <p>Conéctate con amigos y comparte tus pensamientos.</p>
+            <button id="btn-post" aria-label="Crear publicación" title="Crear publicación" style=" margin-top: 5%; margin-bottom: 10%; background-color: black; color:white; width: 180px; height: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: px; border: solid rgb(113, 107, 107) 1px; cursor: pointer;">Crear Publicación</button>    
+        </section>
+        <article class="post" tabindex="0" aria-label="Publicación">
+            <div class="content">¡Hola mundo! Este es mi primer post en Linksy.</div>
+        </article>
+        <article class="post" tabindex="0" aria-label="Publicación">
+            <div class="content">Me encanta el diseño de esta aplicación.</div>
+        </article>
+     </section>
+
+    <section id="profile" class="content-area active" tabindex="0" aria-label="Sección de perfil de usuario">
+      <div class="profile-info">
+        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=80" style="cursor: pointer; border: solid rgb(128, 0, 92);" alt="Foto de perfil de usuario" />
+        <h2>Usuario</h2>
+        <p>Amante de las redes vintage, disfrutando Linksy.</p>
+      </div>
+      <div style="margin-top:16px;">
+        <h3>Publicaciones recientes</h3>
+        <article class="post" tabindex="0" aria-label="Publicación">
+          <div class="content">Este es mi primer post en Linksy, ¡hola a todos!</div>
+        </article>
+        <article class="post" tabindex="0" aria-label="Publicación">
+          <div class="content">Me encanta el estilo blanco y negro.</div>
+        </article>
+      </div>
+    </section>
+    <section id="friends" class="content-area" tabindex="0" aria-label="Sección de amigos">
+      <h3>Amigos</h3>
+      <ul class="list" tabindex="0">
+        <li>Amigo1</li>
+        <li>Amigo2</li>
+        <li>Amigo3</li>
+        <li>Amigo4</li>
+      </ul>
+    </section>
+    <section id="messages" class="content-area" tabindex="0" aria-label="Sección de mensajes">
+      <h3>Mensajes recientes</h3>
+      <ul class="list" tabindex="0">
+        <li><strong>Amigo1:</strong> ¿Quieres salir este fin de semana?</li>
+        <li><strong>Amigo3:</strong> ¿Viste la última actualización?</li>
+        <li><strong>Amigo2:</strong> Feliz cumpleaños!</li>
+      </ul>
+    </section>
+    <section id="settings" class="content-area" tabindex="0" aria-label="Sección de configuración">
+      <h3>Configuraciones</h3>
+      <form class="settings-form" tabindex="0">
+        <label><input type="checkbox" checked disabled /> Notificaciones activadas</label>
+        <label><input type="checkbox" disabled /> Modo oscuro (ya activado)</label>
+        <button type="button" disabled>Guardar Cambios (sin función)</button>
+      </form>
+    </section>
+  </main>
+  <footer class="mobile-nav" aria-label="Navegación móvil">
+    <button aria-label="Inicio"><span>🏠</span></button>
+    <button aria-label="Buscar"><span>🔍</span></button>
+    <button aria-label="Notificaciones"><span>🔔</span></button>
+    <button aria-label="Perfil"><span>👤</span></button>
+  </footer>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
+
